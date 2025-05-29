@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: pink;
-      background-size: cover;
+      background-size: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,13 +22,14 @@
     .title {
       font-size: 2.5em;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .gift-box {
       width: 150px;
       height: 150px;
       background: url('https://cdn-icons-png.flaticon.com/512/1077/1077114.png') no-repeat center center;
-      background-size: contain;
+      background-size: cover;
       cursor: pointer;
       transition: transform 0.3s;
     }
@@ -44,11 +45,15 @@
       background: rgba(255, 255, 255, 0.2);
       padding: 20px;
       border-radius: 10px;
+      color: #800040;
+      background-color: rgba(255, 255, 255, 0.4);
+      text-shadow: none;
     }
   </style>
 </head>
 <body>
-  <div class="title">For the Love of My Life AYAAAAAAAAAAAAAAAAAAAAAAAAAAAA  💖🌸</div>
+  <div class="title">For the Love of My Life AYAAAAAAAAAAAAAAAAAAAAAAAAAAAA ,💖🌸</div>
+  <div class ="title">CLICK HIM</div>
   <div class="gift-box" onclick="openGift()"></div>
   <div class="message" id="message">
     🎁 Surprise! I just want you to know how much I love you! 💕<br>
