@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift for You</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .title {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .gift-box {
+      width: 150px;
+      height: 150px;
+      background: url('https://cdn-icons-png.flaticon.com/512/1077/1077114.png') no-repeat center center;
+      background-size: contain;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gift-box:hover {
+      transform: scale(1.1);
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.5em;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">For the Love of My Life AYAAAAAAAAAAAAAAAAAAAAAAAAAAAA 💖🌸 tap the box icon</div>
+  <div class="gift-box" onclick="openGift()"></div>
+  <div class="message" id="message">
+    🎁 Surprise! I just want you to know how much I love you! 💕<br>
+    You are my flower, my sunshine, and my everything , my princess , my mommy ,  my everything , my darling . 🌹☀️
+  </div>
+
+  <script>
+    function openGift() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
