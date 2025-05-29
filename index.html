@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gift for You</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gift for My Love</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: pink;
-      background-image: url('https://emojicdn.elk.sh/🌸');
-      background-repeat: repeat;
-      background-size: 50px;
+      background-image: url('https://emojicdn.elk.sh/🌸'), url('https://emojicdn.elk.sh/❤️');
+      background-repeat: repeat, repeat;
+      background-size: 40px, 30px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20,46 +20,55 @@
       color: white;
       text-shadow: 1px 1px 4px #000;
     }
-
     .title {
       font-size: 2.5em;
       margin-bottom: 20px;
+      text-align: center;
     }
-
     .gift-box {
-      width: 150px;
-      height: 150px;
-      background: url('https://www.flaticon.com/free-icon/gift-box-with-a-bow_66834?term=gift+box&page=1&position=1&origin=tag&related_id=66834') no-repeat center center;
-      background-size: cover;
+      width: 160px;
+      height: 160px;
+      background: url('https://cdn-icons-png.flaticon.com/512/616/616408.png') no-repeat center center;
+      background-size: contain;
       cursor: pointer;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
     }
-
     .gift-box:hover {
       transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.9);
     }
-
     .message {
-      display: none;
-      margin-top: 20px;
+      margin-top: 30px;
       font-size: 1.5em;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 20px;
-      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px 30px;
+      border-radius: 15px;
+      display: none;
+      max-width: 350px;
+      text-align: center;
+      color: #800040;
+      font-weight: 600;
+      text-shadow: none;
     }
   </style>
 </head>
 <body>
-  <div class="title">For the Love of My Life AYAAAAAAAAAAAAAAAAAAAAAAAAAAAA  💖🌸 tap the icon under </div>
+  <div class="title">For the Love of My Life 💖🌸</div>
   <div class="gift-box" onclick="openGift()"></div>
   <div class="message" id="message">
-    🎁 Surprise! I just want you to know how much I love you! 💕<br>
-    You are my flower, my sunshine, and my everything , my princess , my mommy ,  my everything , my darling . 🌹☀️
+    🎁 Surprise! I love you more than words can say! You are my sunshine and my flower forever. 🌹☀️
   </div>
 
   <script>
     function openGift() {
-      document.getElementById('message').style.display = 'block';
+      const msg = document.getElementById('message');
+      if (msg.style.display === 'block') {
+        msg.style.display = 'none';
+      } else {
+        msg.style.display = 'block';
+      }
     }
   </script>
 </body>
